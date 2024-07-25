@@ -1,0 +1,11 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: <First-name>-<Last-name>-pvc
+  namespace: <First-name>-<Last-name>-pipeline-from-scratch
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
